@@ -51,7 +51,8 @@ Bu "Yayıncı-Abone" desenini C\#'ta kurmak için 3 temel yapıya ihtiyacımız 
 2.  **EventArgs (Olay Verisi) - "VERİ PAKETİ"**
 
 
-        > Payloadin Tasindiği yer olarak düşünebiliriz, Sağladiği fayda şudur parametrelerin hepsini metotla taşımak yerine veriyi paketliyoruz
+        > Payloadin Tasindiği yer olarak düşünebiliriz,
+        > Sağladiği fayda şudur parametrelerin hepsini metotla taşımak yerine veriyi paketliyoruz
       
       * **Nedir?** Olay tetiklendiğinde, yayıncıdan abonelere gönderilecek veriyi (payload) taşıyan basit bir sınıftır.
       * **Projedeki Dosya:** `AuthEventArgs.cs`
