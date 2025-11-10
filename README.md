@@ -8,7 +8,7 @@ Senaryo olarak, sorumlulukların net bir şekilde ayrıldığı (Separation of C
 
 -----
 
-## 🎯 Temel Amaç: Ayrıştırma (Decoupling)
+##  Temel Amaç: Ayrıştırma (Decoupling)
 
 Bu mimarinin temel amacı **Ayrıştırma**'dır. Yani, birbiriyle iletişim kurması gereken sınıfların, birbirleri hakkında doğrudan bilgi sahibi olmasını (sıkı sıkıya bağlılık - *tight coupling*) engellemektir.
 
@@ -61,7 +61,7 @@ Bu "Yayıncı-Abone" desenini C\#'ta kurmak için 3 temel yapıya ihtiyacımız 
 
 -----
 
-## 📂 Proje Dosya Yapısı
+##  Proje Dosya Yapısı
 
 Proje, sorumlulukları ayırmak için birden fazla dosyaya bölünmüştür:
 
@@ -74,7 +74,7 @@ Proje, sorumlulukları ayırmak için birden fazla dosyaya bölünmüştür:
 
 -----
 
-## ⚙️ Nasıl Çalışır? "Sihrin" Arkasındaki Mekanizma
+##  Nasıl Çalışır? "Sihrin" Arkasındaki Mekanizma
 
 "Sihirli" gibi görünen bu bağlantının arkasında, yönetilen basit bir liste mekanizması yatar.
 
@@ -142,7 +142,7 @@ if (UserLoggedIn_Listesi != null)
 
 -----
 
-## 🚀 Nasıl Çalıştırılır?
+##  Nasıl Çalıştırılır?
 
 1.  Bu projeyi klonlayın veya indirin.
 2.  Bir terminalde veya komut isteminde proje klasörüne gidin.
@@ -156,7 +156,7 @@ dotnet run
 
 -----
 
-## 🎓 Öğrenilen Temel İlkeler
+##  Öğrenilen Temel İlkeler
 
   * **Ayrıştırma (Decoupling):** Yayıncı ve Aboneler birbirini tanımaz.
   * **Sorumlulukların Ayrılması (Separation of Concerns):** `AuthService` (İş Mantığı), `AuditLogger` (Loglama), `StatisticsService` (İstatistik) sınıflarının her biri tek bir iş yapar.
