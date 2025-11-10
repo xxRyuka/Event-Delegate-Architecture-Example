@@ -38,7 +38,7 @@ Bu tasarımda, yeni bir `EmailService` eklemek isteseydik, `AuthService`'in kodu
 
 -----
 
-## 🛠️ Mimarinin 3 Temel Bileşeni
+##  Mimarinin 3 Temel Bileşeni
 
 Bu "Yayıncı-Abone" desenini C\#'ta kurmak için 3 temel yapıya ihtiyacımız vardır:
 
@@ -50,6 +50,9 @@ Bu "Yayıncı-Abone" desenini C\#'ta kurmak için 3 temel yapıya ihtiyacımız 
 
 2.  **EventArgs (Olay Verisi) - "VERİ PAKETİ"**
 
+
+        > Payloadin Tasindiği yer olarak düşünebiliriz, Sağladiği fayda şudur parametrelerin hepsini metotla taşımak yerine veriyi paketliyoruz
+      
       * **Nedir?** Olay tetiklendiğinde, yayıncıdan abonelere gönderilecek veriyi (payload) taşıyan basit bir sınıftır.
       * **Projedeki Dosya:** `AuthEventArgs.cs`
       * **Verimiz:** `Username` (Kim giriş yaptı?) ve `Timestamp` (Ne zaman giriş yaptı?).
