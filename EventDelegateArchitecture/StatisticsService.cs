@@ -14,7 +14,7 @@ public class StatisticsService
     public void OnUserLoggedIn(object sender, AuthEventArgs e)
     {
         _totalLogins++;
-        Console.WriteLine($"[İSTATİSTİK]: Toplam başarılı giriş sayısı güncellendi: {_totalLogins}");
+        Console.WriteLine($"[İSTATİSTİK]: Toplam başarılı giriş sayısı güncellendi: {_totalLogins} ");
     }
 
     // NOT: Bu sınıf 'LoginFailed' olayını umursamıyor.

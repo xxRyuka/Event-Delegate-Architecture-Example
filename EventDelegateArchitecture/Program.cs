@@ -24,26 +24,31 @@ var stats = new StatisticsService();
 // Neden '+= logger.OnUserLoggedIn'?
 // Bu satır, 'authService'e der ki: "Senin 'UserLoggedIn' olayın
 // tetiklendiğinde, benim 'logger.OnUserLoggedIn' METODUMU da çağır."
-//
+
+
 // DİKKAT: Buraya 'logger.OnUserLoggedIn' YAZIYORUZ (Metodun kendisi).
 //         Buraya 'new AuthEventArgs()' YAZMIYORUZ (Veri paketi).
 // 'event' (tipi AuthEventHandler), METOT bekler.
-// authService.UserLoggedIn += logger.OnUserLoggedIn;
+authService.UserLoggedIn += logger.OnUserLoggedIn;
 
 // Aynı 'UserLoggedIn' olayına ikinci bir abone daha ekliyoruz.
 // 'AuthService'in haberi bile yok, o sadece listeye bir metot daha ekler.
-// authService.UserLoggedIn += stats.OnUserLoggedIn;
+authService.UserLoggedIn += stats.OnUserLoggedIn;
 
 // 'LoginFailed' olayına ise SADECE 'logger'ı abone ediyoruz.
 authService.LoginFailed += logger.OnLoginFailed;
 
+authService.LoginFailed += logger.LOG;
+authService.LoginFailed -= logger.LOG; // Burda Method listesindne cikartiyoruz ve loginFailed eventi tetiklendiğinde LOG methodu calismiyor artık
+
+authService.UserLoggedIn += logger.LOG;
+authService.UserLoggedIn += logger.LOG; // metohddu değil referansini tuttugu için 2 kere ekleyebiliyoruz
 
 
-// 'stats' servisi bu olayla ilgilenmediği için onu eklemedik.
+// eventler tetiklendiğinde += ile listesine eklenen metodları bir for döngüsüyle çalsıtırır (bu yüzden parametrelerin ayni olmasi gerekiyor )
 
-// ---------------------------------
 // 3. ADIM: SİSTEMİ TETİKLE (SİMÜLASYON)
-// ---------------------------------
+
 // 'authService.Login' metodunu çağırdığımızda, 'authService'
 // işini yapacak ve (içeride) 'OnUserLoggedIn' veya 'OnLoginFailed'
 // metotlarını çağıracak. Bu metotlar da 'if (Event != null)' kontrolünden

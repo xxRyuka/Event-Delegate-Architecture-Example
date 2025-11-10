@@ -25,4 +25,10 @@ public class AuditLogger
     {
         Console.WriteLine($"[AUDIT LOG]: *** BAŞARISIZ GİRİŞ DENEMESİ ***. Kullanıcı: {e.Username}, Zaman: {e.Timestamp}");
     }
+    
+    //
+    public void LOG(object sender, AuthEventArgs e)
+    {
+        Console.WriteLine($"[LOG] Olayı Cagiran :   {sender.GetType().Name} detailed : {sender.ToString()}");
+    }
 }
