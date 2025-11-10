@@ -1,0 +1,14 @@
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/bin/Debug/net9.0/EventDelegateArchitecture
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/bin/Debug/net9.0/EventDelegateArchitecture.deps.json
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/bin/Debug/net9.0/EventDelegateArchitecture.runtimeconfig.json
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/bin/Debug/net9.0/EventDelegateArchitecture.dll
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/bin/Debug/net9.0/EventDelegateArchitecture.pdb
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/obj/Debug/net9.0/EventDelegateArchitecture.GeneratedMSBuildEditorConfig.editorconfig
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/obj/Debug/net9.0/EventDelegateArchitecture.AssemblyInfoInputs.cache
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/obj/Debug/net9.0/EventDelegateArchitecture.AssemblyInfo.cs
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/obj/Debug/net9.0/EventDelegateArchitecture.csproj.CoreCompileInputs.cache
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/obj/Debug/net9.0/EventDelegateArchitecture.dll
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/obj/Debug/net9.0/refint/EventDelegateArchitecture.dll
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/obj/Debug/net9.0/EventDelegateArchitecture.pdb
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/obj/Debug/net9.0/EventDelegateArchitecture.genruntimeconfig.cache
+/home/ryuka/RiderProjects/EventDelegateArchitecture/EventDelegateArchitecture/obj/Debug/net9.0/ref/EventDelegateArchitecture.dll
